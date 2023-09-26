@@ -19,3 +19,4 @@ command = "dicomsort {input_files} {output_dir} {params}"
 shell(command)
 
 
+
