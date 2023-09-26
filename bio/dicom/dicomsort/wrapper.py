@@ -1,5 +1,9 @@
 # FILEPATH: wrapper.py
 
+# import the dicomsort module
+import dicomsort
+
+
 # Import the necessary modules
 from snakemake.shell import shell
 
