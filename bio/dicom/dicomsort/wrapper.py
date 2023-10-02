@@ -3,7 +3,6 @@
 # import the dicomsort module
 import dicomsort
 
-
 # Import the necessary modules
 from snakemake.shell import shell
 
@@ -12,11 +11,14 @@ input_files = snakemake.input.input_files
 output_dir = snakemake.output.output_dir
 params = snakemake.params
 
-# Define the command to be executed
-command = "dicomsort {input_files} {output_dir} {params}"
+# # Define the command to be executed
+# command = "dicomsort {input_files} {output_dir} {params}"
 
-# Execute the command
-shell(command)
+# # Execute the command
+# shell(command)
 
+sorter = dicomsort.DICOMSorter()
+# try:
+#     dicomsort.parseArgs(sorter, input_files, output_dir, params)
 
 
